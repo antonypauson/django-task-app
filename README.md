@@ -1,5 +1,9 @@
 # Django Task App
 
+
+https://github.com/user-attachments/assets/a45740ed-32aa-48ea-a174-b91a42e9b200
+
+
 A simple task management application built with Django.
 
 ## Features
@@ -7,7 +11,7 @@ A simple task management application built with Django.
 - Add, edit, and delete tasks
 - Mark tasks as complete or incomplete
 
-## Demo
+## Full Demo on YouTube
 
 [![Watch the video](https://img.youtube.com/vi/x81FmzuHXE0/maxresdefault.jpg)](https://youtu.be/x81FmzuHXE0)
 
