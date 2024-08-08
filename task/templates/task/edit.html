@@ -1,0 +1,11 @@
+{% extends "task/layout.html" %}
+
+{% block body %}
+    <h1>EDIT TASK</h1>
+    <form action ="{% url 'task:edit_task' task_id %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="{% url 'task:index' %}">Back to Tasks</a>
+{% endblock %}

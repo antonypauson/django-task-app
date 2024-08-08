@@ -1,0 +1,23 @@
+{% extends "task/layout.html" %}
+{% block body %}
+    <h1>TASKS: </h1>
+       <ul>
+            {% for task in tasks %}
+                <li>
+                    <a href="{% url 'task:complete_task' task.id %}">
+                        {% if task.completed %}
+                            <strike>{{ task.task }}</strike>
+                        {% else %}
+                            {{ task.task }}
+                        {% endif %}
+                    </a>
+                    <span>
+                        <a href="{% url 'task:edit_task' task.id %}">EDIT</a>
+                        <a href="{% url 'task:delete_task' task.id %}">DELETE</a>
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'task:add' %}">Add a New Task</a>
+{% endblock %}
+ 
